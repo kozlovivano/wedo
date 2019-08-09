@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stepper.css">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+    <title>ajouter-votre-annonce</title>
+
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.png" type="image/x-icon">
+
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light to bg-white" style="font-size: small; font-family: 'source sans pro',sans-serif">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/Logo-design.svg" class="img-fluid p-2" width="75%" alt="logo">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline" style="white-space:nowrap;">
+            <div class="row my-auto nav-search" style="white-space: nowrap">
+                <i class="material-icons my-auto" style="font-size: 0.8vw; color: #1d1d23">search</i>
+                <input class="form-control col-auto pl-2" type="search" placeholder="Que cherchez vous?" style="font-size: 12px; line-height: 18px; font-weight: 400; font-family: 'source sans pro', sans-serif; border: none; color: #1d1d23" aria-label="Search">
+            </div>
+        </form>
+        <ul class="navbar-nav ml-auto" style="white-space:nowrap;">
+            <li class="nav-item my-auto">
+                <a class="nav-link" href="#" style="color: #484848">Demander un devis</a>
+            </li>
+            <li class="nav-item my-auto">
+                <a class="nav-link" href="#" style="color: #484848">Trouver un pro</a>
+            </li>
+            <li class="nav-item my-auto">
+                <a class="nav-link" href="#" style="color: #484848">Offres d'emploi</a>
+            </li>
+            <li class="nav-item my-auto">
+                <a class="nav-link" href="#" style="color: #242429">Blog</a>
+            </li>
+            <li class="nav-item my-auto flex-list">
+                <ul class="list-unstyled" style="padding: 0px">
+                    <li style="padding: 0px; margin-right: 0px">
+                        <a class="nav-link" href="#" style="color: #484848; font-size: 13px"><i class="material-icons align-middle" style="font-size: 1.2vw;">perm_identity</i> Connectez-vous</a>
+                    </li>
+                    <li style="padding: 0px; margin-right: 0px">
+                        <a class="nav-link" href="#" style="color: #484848">S'inscrire</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown my-auto p-0" style="margin-right: 0px; padding-right: 0px">
+                <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/img/french.png" width="40" alt="language" style="min-width: 40px">
+                </a>
+                <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#"><img src="assets/img/english.png" class="p-2" width="50" alt="language"></a>
+                    <a class="dropdown-item" href="#"><img src="assets/img/german.png" class="p-2" width="50" alt="language"></a>
+                </div>
+            </li>
+            <li class="nav-item my-auto">
+                <button class="button-yellow btn btn-lg my-auto py-3 px-4" style="font-size: 13px; line-height: 18px; font-weight: 400; font-family: 'source sans pro', sans-serif" type="submit">
+                    <span class="p-3"><i class="material-icons align-middle" style="font-size: 18px">add_circle_outline</i> Inscription artisan</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<div id="page-content" class="annonce-page">
+
+    <div class="container-fluid col-12 p-lg-5 text-center" style="background-image: url('assets/img/members-after.jpg'); background-size: cover; margin-top: 90px">
+        <div class="container mx-auto col-xl-8 col-lg-12 bg-white p-0 m-5" style="border: solid 1px #D1D1D1D1;">
+            <div class="p-5">
+                <h1 class="p-5 bg-white" style="font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 40px; line-height: 50px; color: #171717;">Pour les membres: Activez votre <br>compte sur wedo.lu</h1>
+                <p class="pr-5 pl-5" style="font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color: #171717;">Wedo.lu est une initiative de la Fédération des Artisans. En tant qu’entreprise membre vous êtes automatiquement référencée dans notre annuaire professionnel. La procédure pour prendre en main votre compte entreprise est la suivante :</p>
+            </div>
+            <div class="container p-5">
+                <ul class="login-steps group clearfix p-0" style="list-style-type: none;">
+                    <li>
+                        <span class="number">1</span>
+                        <figure>
+                            <img src="https://wedo.lu/wp-content/uploads/2018/05/interface.svg" alt="interface">
+                        </figure>
+                        <p>Cliquez <a href="#" data-toggle="modal" data-target="#sign-up-modal" class="open-register-btn">ici pour s’inscrire</a> et créer votre compte d'utilisateur.</p>
+                    </li>
+                    <li>
+                        <span class="number">2</span>
+                        <figure>
+                            <img src="https://wedo.lu/wp-content/uploads/2018/05/icon38-1.svg" alt="icon38 1">
+                        </figure>
+                        <p>Retournez vers <a target="_blank" href="https://www.wedo.lu/">l’annuaire</a> et recherchez votre entreprise.</p>
+                    </li>
+                    <li>
+                        <span class="number">3</span>
+                        <figure>
+                            <img src="https://wedo.lu/wp-content/uploads/2018/05/icon39-1.svg" alt="icon39 1">
+                        </figure>
+                        <p>Cliquez sur «proclamer».</p>
+                    </li>
+                    <li>
+                        <span class="number">4</span>
+                        <figure>
+                            <img src="https://wedo.lu/wp-content/uploads/2018/05/icon40-1.svg" alt="icon40 1">
+                        </figure>
+                        <p>Sélectionnez votre formule.</p>
+                    </li>
+                    <li>
+                        <span class="number">5</span>
+                        <figure>
+                            <img src="https://wedo.lu/wp-content/uploads/2018/05/icon41-1.svg" alt="icon41 1">
+                        </figure>
+                        <p>Après vérification de notre part votre entreprise sera liée à votre compte d'utilisateur.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="container p-3">
+                <hr>
+                <div class="row col-10 mx-auto pt-5">
+                    <div class="col-lg-6 col-md-12 text-left">
+                        <h5 style="color: #171717; font-size: 14px; line-height: 28px; font-weight: 600; font-family: 'open sans', sans-serif;">Que peux-je faire?</h5>
+                        <p class="pt-3" style="color: #5c5c68; font-size: 20px; line-height: 32px; font-weight: 400; font-family: 'open sans', sans-serif;">Avec ce login vous pouvez éditer le contenu de votre page entreprise et choisir votre formule d’engagement sur wedo.lu (free, start, pro, expert).</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-left">
+                        <h5 style="color: #171717; font-size: 14px; line-height: 28px; font-weight: 600; font-family: 'open sans', sans-serif;">Regarder la vidéo</h5>
+                        <figure class="pt-3">
+                            <iframe src="https://player.vimeo.com/video/270407712" width="400" height="176" frameborder="0" allowfullscreen=""></iframe>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mx-auto w-100 bg-white shadow-lg card rounded-0 m-0" style="border: solid 1px #D1D1D1D1;">
+                <div class="row col-12 mx-auto p-5">
+                    <div class="col-md-9">
+                        <input class="form-control" style="font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 30px; color: #7e7e89; font-weight: 400"  type="search" placeholder="Rechercher mon entreprise" aria-label="Que cherchez vous?">
+                    </div>
+                    <div class="col-md-3 mt-md-0">
+                        <button class="button-yellow btn btn-lg px-5 py-3" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: 13px; line-height: 16px;" type="submit">Recherche</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid col-12 p-lg-5 text-center">
+        <div class="container mx-auto col-xl-9 col-lg-12 p-0 m-5">
+            <div class="pl-5 pr-5">
+                <h1 class="p-3" style="font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 40px; line-height: 50px; color: #171717;">Pour les non-membres: Rejoignez l'organisation<br> de l'artisanat au Luxembourg</h1>
+                <p class="pr-5 pl-5" style="font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color: #171717;">wedo.lu est une initiative de la Fédération des Artisans pour ses membres. Contactez-nous pour découvrir les nombreux avantages liés à une affiliation à la Fédération des Artisans ou complétez directement le formulaire ci-joint pour obtenir une proposition d’affiliation.</p>
+                <hr class="ml-5 mr-5 mt-5">
+            </div>
+            <div class="row text-left pl-5 pr-5 ml-5 mr-5">
+                <div class="col-md-6 col-sm-12">
+                    <p class="mr-5 mt-5" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 18px; line-height: 26px; color: #171717;">Entreprise :</p>
+                    <input class="form-control mr-5 p-0" style="font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 30px; color: #7e7e89; font-weight: 400" type="text" placeholder="Entreprise" aria-label="entreprise">
+                    <p class="mr-5 mt-5" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 18px; line-height: 26px; color: #171717;">Nombre De Salariés :</p>
+                    <input class="form-control mr-5 p-0" style="font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 30px; color: #7e7e89; font-weight: 400" type="text" placeholder="Nombre De Salariés" aria-label="Nombre De Salariés">
+                    <p class="mr-5 mt-5" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 18px; line-height: 26px; color: #171717;">Téléphone :</p>
+                    <input class="form-control mr-5 p-0" style="font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 30px; color: #7e7e89; font-weight: 400" type="text" placeholder="Téléphone" aria-label="Téléphone">
+                    <div class="row ml-1 mr-5 pt-2 mt-5 p-0">
+                        <label style="font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: 14px; line-height: 20px; color: #565d62;">
+                            <input style="width: 40px; display: inline-block;border: 1px solid; padding-top: 8px; padding-bottom: 8px; float: none;" class="text-center" type="text">
+                        </label>
+                        <label class="ml-2 my-auto"  style="font-family: 'Source Sans Pro', sans-serif; font-size: 14px; line-height: 20px; color: #565d62; font-weight: 400"> - 1 = 5</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <p class=" mr-5 mt-5" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 18px; line-height: 26px; color: #171717;">Secteur d'activité :</p>
+                    <input class="form-control  mr-5 p-0"  style="font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 30px; color: #7e7e89; font-weight: 400" type="text" placeholder="Secteur d'activité" aria-label="Secteur d'activité">
+                    <p class=" mr-5 mt-5" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 18px; line-height: 26px; color: #171717;">Personne De Contact :</p>
+                    <input class="form-control  mr-5 p-0"  style="font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 30px; color: #7e7e89; font-weight: 400" type="text" placeholder="Personne De Contact" aria-label="Personne De Contact">
+                    <p class=" mr-5 mt-5" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 18px; line-height: 26px; color: #171717;">Email :</p>
+                    <input class="form-control  mr-5 p-0"  style="font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 30px; color: #7e7e89; font-weight: 400" type="email" placeholder="Email" aria-label="Email">
+                    <div class=" mr-5 p-2 mt-5 align-baseline">
+                        <label><input type="checkbox" style="font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; color: #171717;"> Je donne mon consentement pour que mes données soient transmises par ce formulaire</label>
+                    </div>
+                </div>
+                <div class="row ml-2">
+                    <button class="button-yellow btn btn-lg mt-5 pl-5 pr-5 pt-3 pb-3" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: 13px; line-height: 16px;" type="submit">Envoyer</button>
+                </div>
+                <div class="col-12">
+                    <hr class="p-5 mt-5">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid col-12 mb-5 shadow bg-white text-center" style="border: solid 1px #d1d1d1;">
+        <div class="container mx-auto col-xl-6 col-lg-10 col-md-12 p-0 m-5">
+            <div class="p-5">
+                <h1 class="p-5"  style="font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: 40px; line-height: 50px; color: #171717;">Contact nouveaux membres</h1>
+                <hr class="mt-5 mb-5">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row text-left">
+                            <div class="col-4">
+                                <img src="assets/img/icon37.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-8">
+                                <p style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 22px; line-height: 28px; color: #000;">Max Frank</p>
+                                <p style="font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px; line-height: 26px; color: #7e7e89;">Fédération des Artisans</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#" class="link-orange" style="font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 14px; line-height: 28px;"><i class="material-icons my-auto">phone</i>424511-22</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="link-orange" style="font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 14px; line-height: 28px;"><i class="material-icons my-auto">mail_outline</i>m.frank@fda.lu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small" style="font-size: small;">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left footer-bg pt-4">
+        <div class="container p-3">
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <a href="#"><img src="assets/img/Logo-design.svg" style="max-width:40%;max-height:100%;" alt=""></a>
+                    <hr color="#FFA601">
+                    <p class="text-black-50" style="line-height: 200%; font-family: 'open sans',sans-serif">wedo.lu est une initiative de la Fédération des Artisans. La Fédération des Artisans regroupe les
+                        entreprises artisanales légalement établies sur le territoire luxembourgeois. L’artisanat luxembourgeois
+                        compte 7.000 entreprises avec quelque 90.000 salariés.</p>
+
+                    <label class="text-uppercase font-weight-bold" style="font-family: 'source sans pro',sans-serif">ABONNEZ-VOUS А LA NEWSLETTER</label>
+                    <form class="form-inline mt-3" method="post">
+                        <div class="form-group w-100">
+
+                            <div class="col-lg-9 col-md-12 p-0">
+                                <input class="form-control w-100" style="font-size: small; font-family: 'source sans pro',sans-serif" type="email" name="email" placeholder="Je suis d'accord de recevoir la Newsletter de wedo.lu">
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <button class="button-yellow text-uppercase rounded-0 pt-2 pb-2 btn-lg btn-block" style="font-family: 'source sans pro',sans-serif; font-size: small; line-height: 30px" type="submit">Envoyer </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <div class="row mt-2">
+                        <div class="col-4"><a href="#"><img style="max-width:100%;max-height:100%;" src="assets/img/FEDERATION_DES_ARTISANS.png" alt=""></a></div>
+                        <div class="col-4"><a href="#"><img style="max-width:100%;max-height:100%;" src="assets/img/lets-make-it-happen-lux-300x842.png" alt=""></a></div>
+                        <div class="col-4"><a href="#"><img style="max-width:100%;max-height:100%;" src="assets/img/wedo-made-in-luxembourg-12.png" alt=""></a></div>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+
+                <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <p class="font-weight-bolder text-uppercase" style="font-size: medium;font-family: Montserrat,sans-serif">Réseaux sociaux </p>
+
+                    <div class="row p-2 mb-3">
+                        <a href="#" class="ml-0 mr-2"><img style="width: 20pt; height: 20pt;" src="assets/img/fb.svg" alt=""></a>
+                        <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/twitter.svg" alt=""></a>
+                        <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/Youtube.svg" alt=""></a>
+                        <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/google+.svg" alt=""></a>
+                        <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/lin.svg" alt=""></a>
+                        <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/instagram.svg" alt=""></a>
+                        <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/pinterest.svg" alt=""></a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <p class="font-weight-bold text-uppercase" style="font-size: medium;font-family: Montserrat,sans-serif">À PROPOS</p>
+                            <ul class="list-unstyled" style="font-family: 'source sans pro',sans-serif">
+                                <li class="pt-2"><a href="#!">Nous contacter</a></li>
+                                <li class="pt-2"><a href="#!">Presse</a></li>
+                                <li class="pt-2"><a href="#!">CGU - Volet particuliers</a></li>
+                                <li class="pt-2"><a href="#!">CGU - Volet entrepreneurs</a></li>
+                                <li class="pt-2"><a href="#!">Mentions légales</a></li>
+                                <li class="pt-2"><a href="#!">Devenir partenaire</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <p class="font-weight-bold text-uppercase" style="font-size: medium;font-family: Montserrat,sans-serif">DÉCOUVRIR</p>
+                            <ul class="list-unstyled" style="font-family: 'source sans pro',sans-serif">
+                                <li class="pt-2"><a href="#!">Annuaire Artisans</a></li>
+                                <li class="pt-2"><a href="#!">Obtenir un devis</a></li>
+                                <li class="pt-2"><a href="#!">Évènements</a></li>
+                                <li class="pt-2"><a href="#!">Job Board</a></li>
+                                <li class="pt-2"><a href="#!">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <p class="font-weight-bold text-uppercase" style="font-size: medium;font-family: Montserrat,sans-serif">ESPACE ARTISAN</p>
+                            <ul class="list-unstyled" style="font-family: 'source sans pro',sans-serif">
+                                <li class="pt-2"><a href="#!">Accueil artisan</a></li>
+                                <li class="pt-2"><a href="#!">Services & tarifs</a></li>
+                                <li class="pt-2"><a href="#!">Inscription artisan</a></li>
+                                <li class="pt-2"><a href="#!">Aide / FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+
+
+            <div>
+                <hr style="height:1px;border:none;color:#333;background-color:#333; border: 0; margin-top: 50px; margin-bottom: 50px" />
+
+                <div class="text-black-50" style="line-height: 250%;">
+                    <p> Vous souhaitez vous faciliter le quotidien au Luxembourg? Utilisez le meilleur site de devis wedo.lu! </p>
+
+                    <p id="moreInfo" class="collapse">
+
+                        Wedo.lu est le nouvel annuaire des entreprises au Luxembourg, regroupant l’ensemble des entreprises et artisans membres de la Fédération des Artisans.<br>
+
+                        En effet, notre service de pages jaunes en ligne, permet de trouver le bon fournisseur en quelques clics seulement et de le contacter par téléphone, email ou même par fax.<br>
+
+                        Souhaitez-vous savoir comment faire et comparer rapidement un devis pour vos travaux?
+                        Utilisez simplement notre service de devis en ligne sur fixe ou mobile.<br>
+
+                        Obtenez dès maintenant jusqu’à 6 devis gratuits pour tous vos travaux de plomberie, d’électricité, de peinture ou bien encore pour l’installation d’une nouvelle cuisine équipée ou véranda.<br>
+
+                        Nos artisans, hautement qualifiés, s’engagent à vous répondre sous 24 heures pour discuter des détails ou pour fixer un rendez-vous en vue d’établir un devis.
+                    </p>
+
+                </div>
+
+                <div class="text-center" style="margin-top: 50px;">
+                    <button class="btn btn-md btn-dark" id="showMoreLess" type="button" data-toggle="collapse" data-target="#moreInfo" aria-expanded="false" aria-controls="moreInfo">Montrer plus</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 footer-bg-dark text-white">
+        © wedo.lu, 2018
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js" ></script>
+<script src="assets/js/wedo.js" ></script>
+
+</body>
+
+</html>

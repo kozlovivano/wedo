@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/modal-left.css">
+  <link rel="stylesheet" href="assets/css/tabs.css">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <title>Résultat de recherche</title>
+
+  <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/icons/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light to bg-white" style="font-size: small; font-family: 'source sans pro',sans-serif">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">
+    <img src="assets/img/Logo-design.svg" class="img-fluid p-2" width="75%" alt="logo">
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline" style="white-space:nowrap;">
+      <div class="row my-auto nav-search" style="white-space: nowrap">
+        <i class="material-icons my-auto" style="font-size: 0.8vw; color: #1d1d23">search</i>
+        <input class="form-control col-auto pl-2" type="search" placeholder="Que cherchez vous?" style="font-size: 12px; line-height: 18px; font-weight: 400; font-family: 'source sans pro', sans-serif; border: none; color: #1d1d23" aria-label="Search">
+      </div>
+    </form>
+    <ul class="navbar-nav ml-auto" style="white-space:nowrap;">
+      <li class="nav-item my-auto">
+        <a class="nav-link" href="#" style="color: #484848">Demander un devis</a>
+      </li>
+      <li class="nav-item my-auto">
+        <a class="nav-link" href="#" style="color: #484848">Trouver un pro</a>
+      </li>
+      <li class="nav-item my-auto">
+        <a class="nav-link" href="#" style="color: #484848">Offres d'emploi</a>
+      </li>
+      <li class="nav-item my-auto">
+        <a class="nav-link" href="#" style="color: #242429">Blog</a>
+      </li>
+      <li class="nav-item my-auto flex-list">
+        <ul class="list-unstyled" style="padding: 0px">
+          <li style="padding: 0px; margin-right: 0px">
+            <a class="nav-link" href="#" style="color: #484848; font-size: 13px"><i class="material-icons align-middle" style="font-size: 1.2vw;">perm_identity</i> Connectez-vous</a>
+          </li>
+          <li style="padding: 0px; margin-right: 0px">
+            <a class="nav-link" href="#" style="color: #484848">S'inscrire</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown my-auto p-0" style="margin-right: 0px; padding-right: 0px">
+        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="assets/img/french.png" width="40" alt="language" style="min-width: 40px">
+        </a>
+        <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+        <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#"><img src="assets/img/english.png" class="p-2" width="50" alt="language"></a>
+          <a class="dropdown-item" href="#"><img src="assets/img/german.png" class="p-2" width="50" alt="language"></a>
+        </div>
+      </li>
+      <li class="nav-item my-auto">
+        <button class="button-yellow btn btn-lg my-auto py-3 px-4" style="font-size: 13px; line-height: 18px; font-weight: 400; font-family: 'source sans pro', sans-serif" type="submit">
+          <span class="p-3"><i class="material-icons align-middle" style="font-size: 18px">add_circle_outline</i> Inscription artisan</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+<!-- Modal -->
+<div class="container mt-5">
+  <div class="modal left fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="p-3 text-center">
+            <h5>Qu'est-ce que vous cherchez?</h5>
+            <p style="font-size: small">Rechercher ou sélectionner des catégories</p>
+          </div>
+
+          <!-- Tabs -->
+          <section id="tabs">
+            <div class="container">
+
+              <div class="row">
+                <div class="col-12">
+                  <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active" id="nav-filtres-tab" data-toggle="tab" href="#nav-filtres" role="tab" aria-controls="nav-filtres" aria-selected="true">
+                        <i class="material-icons align-middle" style="font-size: 1.4vw;">filter_list</i><br>
+                        Filtres
+                      </a>
+                      <a class="nav-item nav-link" id="nav-category-tab" data-toggle="tab" href="#nav-category" role="tab" aria-controls="nav-category" aria-selected="false">
+                        <i class="material-icons align-middle" style="font-size: 1.4vw;">bookmark_border</i><br>
+                        Catégories
+                      </a>
+                    </div>
+                  </nav>
+                  <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-filtres" role="tabpanel" aria-labelledby="nav-filtres-tab">
+                      <div class="col-12">
+                        <p>Que cherchez-vous ?</p>
+                        <input class="form-control" width="100%" type="text" aria-label="search">
+                        <p>Où chercher ?</p>
+                        <input class="form-control" width="100%" type="text" aria-label="location">
+                        <button class="btn btn-block btn-lg button-yellow mt-5">Recherche</button>
+                      </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-category" role="tabpanel" aria-labelledby="nav-category-tab">
+                      <div class="row m-3">
+                        <div class="hovereffect">
+                          <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/350x150" style="transform:scale(1);" alt="">
+                            <div class="overlay"></div>
+                            <div class="bottom-left">
+                              <p><img src="assets/img/constuction.svg" style="max-height:35px; transform:scale(1);" alt="constuction"></p>
+                              <p>Construction</p>
+                              <span>1523 entrées</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row m-3">
+                        <div class="hovereffect">
+                          <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/350x150" style="transform:scale(1);" alt="">
+                            <div class="overlay"></div>
+                            <div class="bottom-left">
+                              <p><img src="assets/img/constuction.svg" style="max-height:35px; transform:scale(1);" alt="constuction"></p>
+                              <p>Construction</p>
+                              <span>1523 entrées</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row m-3">
+                        <div class="hovereffect">
+                          <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/350x150" style="transform:scale(1);" alt="">
+                            <div class="overlay"></div>
+                            <div class="bottom-left">
+                              <p><img src="assets/img/constuction.svg" style="max-height:35px; transform:scale(1);" alt="constuction"></p>
+                              <p>Construction</p>
+                              <span>1523 entrées</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row m-3">
+                        <div class="hovereffect">
+                          <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/350x150" style="transform:scale(1);" alt="">
+                            <div class="overlay"></div>
+                            <div class="bottom-left">
+                              <p><img src="assets/img/constuction.svg" style="max-height:35px; transform:scale(1);" alt="constuction"></p>
+                              <p>Construction</p>
+                              <span>1523 entrées</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row m-3">
+                        <div class="hovereffect">
+                          <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/350x150" style="transform:scale(1);" alt="">
+                            <div class="overlay"></div>
+                            <div class="bottom-left">
+                              <p><img src="assets/img/constuction.svg" style="max-height:35px; transform:scale(1);" alt="constuction"></p>
+                              <p>Construction</p>
+                              <span>1523 entrées</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row m-3">
+                        <div class="hovereffect">
+                          <a href="#">
+                            <img class="img-responsive" src="http://placehold.it/350x150" style="transform:scale(1);" alt="">
+                            <div class="overlay"></div>
+                            <div class="bottom-left">
+                              <p><img src="assets/img/constuction.svg" style="max-height:35px; transform:scale(1);" alt="constuction"></p>
+                              <p>Construction</p>
+                              <span>1523 entrées</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ./Tabs -->
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- container -->
+
+
+
+
+<div id="page-content">
+
+
+
+  <div class="container-fluid col-xl-7 col-lg-11 col-md-12 mt-5">
+    <div class="row pr-5 pl-5 mt-5">
+      <a href="#" style="font-weight: 400; font-family: 'source sans pro', sans-serif; line-height: 20px; font-size: 13px;" class="link-orange p-4" data-toggle="modal" data-target="#exampleModal">
+        <i class="material-icons align-middle" style="font-size: 1.4vw;">filter_list</i>
+        Filtres de recherche
+      </a>
+      <div class="ml-auto my-auto mr-2 p-2 align-baseline">
+        <p style="font-weight: 400; font-family: 'source sans pro', sans-serif; line-height: 20px; font-size: 13px; color: #242429">
+          <i class="material-icons align-middle" style="font-size: 1.4vw;">
+            remove_red_eye
+          </i>
+          Wedo.lu a trouvé 1526 entreprises pour Construction
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="p-5 mb-5 bg-white" style="border: solid 1px #d1d1d1;">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <a href="#">
+                <img src="assets/img/Logo-design.svg" class="img-fluid" style="max-width:9rem;" alt="">
+                <span class="ml-3" style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 30px; font-size: 24px;">company name</span>
+              </a>
+              <p class="mt-5" style="font-weight: 400; font-family: 'open sans', sans-serif; line-height: 29px; font-size: 16px; color: #7e7e89">La Compagnie De Construction au Luxembourg qui réalise aujourd'hui les travaux de demain.</p>
+              <hr class="mt-5" style="height:2px; border:none; color:#d1d1d1; background-color:#d1d1d1;" />
+              <div class="row m-1">
+                <div class="flex-list mt-3">
+                  <ul class="list-unstyled">
+                    <li style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 16px; font-size: 13px; color: #000"><a href="#">Aménagement extérieur</a></li>
+                    <li style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 16px; font-size: 13px; color: #000"><a href="#">Construction en bois</a></li>
+                    <li style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 16px; font-size: 13px; color: #000"><a href="#">Parquet</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-2">
+                  <i>
+                    <img src="assets/img/marker.svg" alt="image">
+                  </i>
+                </div>
+                <div class="col-10">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">
+                    21 Rue Léon Laval L-3372 Leudelange
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <i>
+                    <img src="assets/img/mobile.svg" alt="image">
+                  </i>
+                </div>
+                <div class="col-10">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">
+                    +352 XXXXXXX
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <i>
+                    <img src="assets/img/envelope.svg" alt="image">
+                  </i>
+                </div>
+                <div class="col-10">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">
+                    secretariat@xxxxx.com
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <i>
+                    <img src="assets/img/web.svg" alt="image">
+                  </i>
+                </div>
+                <div class="col-10">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">
+                    www.xxxxxxxx.com
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">Horaires : <span style="color: red">Fermé - </span>Ouvre à 08:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row p-1 mt-2">
+            <div class="col-10">
+                <div class="row">
+                  <div class="col-4"><img src="https://wedo-test.online/wp-content/uploads/2017/12/Dominici1.jpg" style="width: 100%; height: 100%" alt=""></div>
+                  <div class="col-4"><img src="https://wedo-test.online/wp-content/uploads/2017/12/Dominici2.jpg" style="width: 100%; height: 100%"  alt=""></div>
+                  <div class="col-4"><img src="https://wedo-test.online/wp-content/uploads/2017/12/Dominici3.jpg" style="width: 100%; height: 100%"  alt=""></div>
+                </div>
+            </div>
+            <div class="col-2 text-center my-auto">
+              <a href="#">
+                <i class="fa fa-angle-right" style="width: 40px; height: 40px; border: solid 1px #5c5c68; line-height: 40px; font-size: 22px; margin-left: auto; margin-right: auto; margin-bottom: 10px; border-radius: 50%"></i><br>
+                <span style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #58595b">Voir plus</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="p-5 mb-5 bg-white" style="border: solid 1px #d1d1d1;">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <a href="#">
+                <img src="assets/img/Logo-design.svg" class="img-fluid" style="max-width:9rem;" alt="">
+                <span class="ml-3" style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 30px; font-size: 24px;">company name</span>
+              </a>
+              <p class="mt-5" style="font-weight: 400; font-family: 'open sans', sans-serif; line-height: 29px; font-size: 16px; color: #7e7e89">La Compagnie De Construction au Luxembourg qui réalise aujourd'hui les travaux de demain.</p>
+              <hr class="mt-5" style="height:2px; border:none; color:#d1d1d1; background-color:#d1d1d1;" />
+              <div class="row m-1">
+                <div class="flex-list mt-3">
+                  <ul class="list-unstyled">
+                    <li style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 16px; font-size: 13px; color: #000"><a href="#">Aménagement extérieur</a></li>
+                    <li style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 16px; font-size: 13px; color: #000"><a href="#">Construction en bois</a></li>
+                    <li style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 16px; font-size: 13px; color: #000"><a href="#">Parquet</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-2">
+                  <i>
+                    <img src="assets/img/marker.svg" alt="image">
+                  </i>
+                </div>
+                <div class="col-10">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">
+                    21 Rue Léon Laval L-3372 Leudelange
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <i>
+                    <img src="assets/img/mobile.svg" alt="image">
+                  </i>
+                </div>
+                <div class="col-10">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">
+                    +352 XXXXXXX
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <i>
+                    <img src="assets/img/envelope.svg" alt="image">
+                  </i>
+                </div>
+                <div class="col-10">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">
+                    secretariat@xxxxx.com
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <i>
+                    <img src="assets/img/web.svg" alt="image">
+                  </i>
+                </div>
+                <div class="col-10">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">
+                    www.xxxxxxxx.com
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p style="font-weight: 500; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #5c5c68">Horaires : <span style="color: green">Ouvert - </span>Ferme à 08:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row p-1 mt-2">
+            <div class="col-10">
+              <div class="row">
+                <div class="col-4"><img src="https://wedo-test.online/wp-content/uploads/2017/12/Dominici1.jpg" style="width: 100%; height: 100%" alt=""></div>
+                <div class="col-4"><img src="https://wedo-test.online/wp-content/uploads/2017/12/Dominici2.jpg" style="width: 100%; height: 100%"  alt=""></div>
+                <div class="col-4"><img src="https://wedo-test.online/wp-content/uploads/2017/12/Dominici3.jpg" style="width: 100%; height: 100%"  alt=""></div>
+              </div>
+            </div>
+            <div class="col-2 text-center my-auto">
+              <a href="#">
+                <i class="fa fa-angle-right" style="width: 40px; height: 40px; border: solid 1px #5c5c68; line-height: 40px; font-size: 22px; margin-left: auto; margin-right: auto; margin-bottom: 10px; border-radius: 50%"></i><br>
+                <span style="font-weight: 600; font-family: 'open sans', sans-serif; line-height: 23px; font-size: 16px; color: #58595b">Voir plus</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small" style="font-size: small;">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left footer-bg pt-4">
+    <div class="container p-3">
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <a href="#"><img src="assets/img/Logo-design.svg" style="max-width:40%;max-height:100%;" alt=""></a>
+          <hr color="#FFA601">
+          <p class="text-black-50" style="line-height: 200%; font-family: 'open sans',sans-serif">wedo.lu est une initiative de la Fédération des Artisans. La Fédération des Artisans regroupe les
+            entreprises artisanales légalement établies sur le territoire luxembourgeois. L’artisanat luxembourgeois
+            compte 7.000 entreprises avec quelque 90.000 salariés.</p>
+
+          <label class="text-uppercase font-weight-bold" style="font-family: 'source sans pro',sans-serif">ABONNEZ-VOUS А LA NEWSLETTER</label>
+          <form class="form-inline mt-3" method="post">
+            <div class="form-group w-100">
+
+              <div class="col-lg-9 col-md-12 p-0">
+                <input class="form-control w-100" style="font-size: small; font-family: 'source sans pro',sans-serif" type="email" name="email" placeholder="Je suis d'accord de recevoir la Newsletter de wedo.lu">
+              </div>
+              <div class="col-lg-3 col-md-12">
+                <button class="button-yellow text-uppercase rounded-0 pt-2 pb-2 btn-lg btn-block" style="font-family: 'source sans pro',sans-serif; font-size: small; line-height: 30px" type="submit">Envoyer </button>
+              </div>
+
+            </div>
+          </form>
+
+          <div class="row mt-2">
+            <div class="col-4"><a href="#"><img style="max-width:100%;max-height:100%;" src="assets/img/FEDERATION_DES_ARTISANS.png" alt=""></a></div>
+            <div class="col-4"><a href="#"><img style="max-width:100%;max-height:100%;" src="assets/img/lets-make-it-happen-lux-300x842.png" alt=""></a></div>
+            <div class="col-4"><a href="#"><img style="max-width:100%;max-height:100%;" src="assets/img/wedo-made-in-luxembourg-12.png" alt=""></a></div>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <p class="font-weight-bolder text-uppercase" style="font-size: medium;font-family: Montserrat,sans-serif">Réseaux sociaux </p>
+
+          <div class="row p-2 mb-3">
+            <a href="#" class="ml-0 mr-2"><img style="width: 20pt; height: 20pt;" src="assets/img/fb.svg" alt=""></a>
+            <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/twitter.svg" alt=""></a>
+            <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/Youtube.svg" alt=""></a>
+            <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/google+.svg" alt=""></a>
+            <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/lin.svg" alt=""></a>
+            <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/instagram.svg" alt=""></a>
+            <a href="#" class="ml-2 mr-3"><img style="width: 20pt; height: 20pt;" src="assets/img/pinterest.svg" alt=""></a>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p class="font-weight-bold text-uppercase" style="font-size: medium;font-family: Montserrat,sans-serif">À PROPOS</p>
+              <ul class="list-unstyled" style="font-family: 'source sans pro',sans-serif">
+                <li class="pt-2"><a href="#!">Nous contacter</a></li>
+                <li class="pt-2"><a href="#!">Presse</a></li>
+                <li class="pt-2"><a href="#!">CGU - Volet particuliers</a></li>
+                <li class="pt-2"><a href="#!">CGU - Volet entrepreneurs</a></li>
+                <li class="pt-2"><a href="#!">Mentions légales</a></li>
+                <li class="pt-2"><a href="#!">Devenir partenaire</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p class="font-weight-bold text-uppercase" style="font-size: medium;font-family: Montserrat,sans-serif">DÉCOUVRIR</p>
+              <ul class="list-unstyled" style="font-family: 'source sans pro',sans-serif">
+                <li class="pt-2"><a href="#!">Annuaire Artisans</a></li>
+                <li class="pt-2"><a href="#!">Obtenir un devis</a></li>
+                <li class="pt-2"><a href="#!">Évènements</a></li>
+                <li class="pt-2"><a href="#!">Job Board</a></li>
+                <li class="pt-2"><a href="#!">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+              <p class="font-weight-bold text-uppercase" style="font-size: medium;font-family: Montserrat,sans-serif">ESPACE ARTISAN</p>
+              <ul class="list-unstyled" style="font-family: 'source sans pro',sans-serif">
+                <li class="pt-2"><a href="#!">Accueil artisan</a></li>
+                <li class="pt-2"><a href="#!">Services & tarifs</a></li>
+                <li class="pt-2"><a href="#!">Inscription artisan</a></li>
+                <li class="pt-2"><a href="#!">Aide / FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+
+
+      <div>
+        <hr style="height:1px;border:none;color:#333;background-color:#333; border: 0; margin-top: 50px; margin-bottom: 50px" />
+
+        <div class="text-black-50" style="line-height: 250%;">
+          <p> Vous souhaitez vous faciliter le quotidien au Luxembourg? Utilisez le meilleur site de devis wedo.lu! </p>
+
+          <p id="moreInfo" class="collapse">
+
+            Wedo.lu est le nouvel annuaire des entreprises au Luxembourg, regroupant l’ensemble des entreprises et artisans membres de la Fédération des Artisans.<br>
+
+            En effet, notre service de pages jaunes en ligne, permet de trouver le bon fournisseur en quelques clics seulement et de le contacter par téléphone, email ou même par fax.<br>
+
+            Souhaitez-vous savoir comment faire et comparer rapidement un devis pour vos travaux?
+            Utilisez simplement notre service de devis en ligne sur fixe ou mobile.<br>
+
+            Obtenez dès maintenant jusqu’à 6 devis gratuits pour tous vos travaux de plomberie, d’électricité, de peinture ou bien encore pour l’installation d’une nouvelle cuisine équipée ou véranda.<br>
+
+            Nos artisans, hautement qualifiés, s’engagent à vous répondre sous 24 heures pour discuter des détails ou pour fixer un rendez-vous en vue d’établir un devis.
+          </p>
+
+        </div>
+
+        <div class="text-center" style="margin-top: 50px;">
+          <button class="btn btn-md btn-dark" id="showMoreLess" type="button" data-toggle="collapse" data-target="#moreInfo" aria-expanded="false" aria-controls="moreInfo">Montrer plus</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 footer-bg-dark text-white">
+    © wedo.lu, 2018
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js" ></script>
+<script src="assets/js/wedo.js" ></script>
+</body>
+
+</html>

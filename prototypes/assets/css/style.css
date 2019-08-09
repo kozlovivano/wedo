@@ -1,0 +1,688 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: #484848;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 1600px) {
+    .nav-search {
+        display: none !important;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0rem);
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: inherit;
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+.navbar-nav li {
+    margin-right: 1vw;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: 'source sans pro', sans-serif;
+}
+
+.navbar-nav li>ul>li>a {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: 'source sans pro', sans-serif;
+}
+
+.dropdown-nav:hover>.dropdown-menu {
+    display: block;
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+}
+
+.dropdown-nav:hover>.dropdown-menu>.dropdown-item {
+
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    background-color: #fff;
+}
+
+#slideshow {
+    width: 100%;
+    height: 35vw;
+    background-image: url('../img/Wedo-Luxembourg-1-1-1.jpg');
+    background-size: cover;
+    justify-content: center;
+}
+
+#slideshow-2 {
+    width: 100%;
+    height: 40vw;
+    background-image: url('../img/pagehead1.jpg');
+    background-size: cover;
+    justify-content: center;
+}
+
+#slideshow-annuaire {
+    width: 100%;
+    height: 20vw;
+    background-image: url('../img/img_header_2x.jpg');
+    background-size: cover;
+}
+
+#child {
+    width: 100%;
+    position: relative;
+    top: -15vw;
+    bottom: -15vw;
+}
+
+#child-2 {
+    width: 100%;
+    position: relative;
+    top: -8vw;
+    bottom: -15vw;
+}
+
+#child-annuaire {
+    width: 100%;
+    position: relative;
+    top: -15vw;
+    bottom: -15vw;
+}
+
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../img/Wedo-Luxembourg-1-1-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*buttons*/
+.button-yellow {
+    font-family: 'source sans pro', sans-serif;
+    background-color: #FFA601;
+    border-radius: 2px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    color: #ffffff;
+}
+
+.button-yellow:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.button-white {
+    font-family: 'source sans pro', sans-serif;
+    background-color: #ffffff;
+    border-radius: 2px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    color: #FFA601;
+}
+
+.button-white:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.button-white-bordered {
+    font-family: 'source sans pro', sans-serif;
+    background-color: #ffffff;
+    border-radius: 2px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    color: #FFA601;
+    border-color: #FFA601;
+}
+
+.button-white-bordered:hover {
+    background-color: black;
+    color: #fff;
+    border-color: black;
+}
+
+.link-orange:hover {
+    color: #FFA601;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.navlink-orange:hover {
+    color: #FFA601;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    transform: translateX(5px);
+}
+
+.link-gray-orange {
+    color: #5c5c68;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+.link-gray-orange:hover {
+    color: #FFA601;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+
+/* footer */
+.footer-bg{
+    background-color: #EFEFEFEF;
+}
+
+.footer-bg-dark{
+    background-color: #525353;
+}
+
+/*brands*/
+.brands {
+    background-color:#fff;
+}
+
+.brands a {
+    display:compact;
+    text-align:center;
+    padding:40px 0;
+}
+
+@media (max-width:767px) {
+    .brands a {
+        padding:30px 0;
+    }
+}
+
+.brands a img {
+    display:inline-block;
+    margin:10px 20px;
+    vertical-align:middle;
+}
+
+img{
+    max-width: 100%;
+}
+
+#page-content {
+    flex: 1 0 auto;
+    background-color: #FAFAFAFA;
+
+}
+
+input[type="text"],[type="password"],[type="email"],[type="search"],
+select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+input[type="text"]:focus,[type="password"]:focus,[type="email"]:focus,[type="search"]:focus,
+select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+}
+
+textarea[type="text"],[type="password"],[type="email"],[type="search"],
+select.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+textarea[type="text"]:focus,[type="password"]:focus,[type="email"]:focus,[type="search"]:focus,
+select.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+
+#categorie-table {
+    margin: 0 auto;
+}
+
+#categorie-table td {
+    padding: 6vw 7vw;
+}
+
+#categorie-table td:hover * {
+    transition-duration: 0.2s;
+    color: #FF9503;
+}
+
+/* hover image effect */
+.hovereffect {
+    width:100%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
+}
+
+.hovereffect .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.5);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+.hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all .2s linear;
+    transition:all .2s linear;
+}
+
+.hovereffect:hover img {
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    padding: 5px;
+    background-color:transparent;
+    color: white;
+}
+
+.top-left span{
+    padding: 5px;
+    border: 0.3px solid white;
+    background-color:transparent;
+}
+
+
+/* Bottom left text */
+.bottom-left {
+    padding: 5px;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+}
+
+/* flex-list */
+.flex-list {
+
+    overflow: hidden;
+}
+.flex-list ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: -1px;
+}
+.flex-list li {
+    flex-basis: auto;
+    padding: 0 1em;
+    border-left: 1px solid #ccc;
+    font-size: small;
+    font-weight: bold;
+}
+
+.hover-panel {
+    transition-duration: 0.2s;
+    background-color: #fff;
+}
+
+.hover-panel * {
+    transition-duration: 0.2s;
+    color: #FF9503;
+}
+
+.hover-panel:hover {
+    transition-duration: 0.2s;
+    background-color: #FF9503;
+}
+
+.hover-panel:hover * {
+    transition-duration: 0.2s;
+    color: white;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(150%) contrast(103%);
+}
+
+.hover-panel-web {
+    transition-duration: 0.2s;
+    background-color: #fff;
+}
+
+.hover-panel-web * {
+    transition-duration: 0.2s;
+    color: #FF9503;
+}
+
+.hover-panel-web p {
+    transition-duration: 0.2s;
+    color: #c1c1c1;
+}
+
+.hover-panel-web:hover {
+    transition-duration: 0.2s;
+    background-color: #FF9503;
+}
+
+.hover-panel-web:hover * {
+    transition-duration: 0.2s;
+    color: white;
+}
+
+.icon:hover {
+    transition-duration: 0.2s;
+    fill: white;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 720px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+#wrapper { position: relative; }
+
+#over_map { position: absolute; top: 50px; left: -350px; z-index: 99; }
+#over_map_large { position: absolute; top: 0; left: -350px; z-index: 99; }
+#over_map_contact { position: absolute; top: 200px; left: 14vw; z-index: 99;}
+
+.box{
+    transition: box-shadow .3s;
+
+}
+
+.box:hover{
+    transition: box-shadow .3s;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.expert::after {
+    content: "Most Popular";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 0;
+    height: 54px;
+    background-color: #ff9503;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 39px;
+    text-align: center;
+    background-image: url(https://wedo.lu/wp-content/uploads/2018/nm.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.login-steps li:after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 0;
+    border-bottom: 2px solid #ffa602;
+    width: 100%;
+    height: 2px;
+}
+
+@media all and (max-width:768px) {
+    .categorie-table tr {    display: table;  width:100%;    }
+    .categorie-table td {    display: table-row; }
+}
+
+.tag-rounded {
+    display: inline-block;
+    border-radius: 13px;
+    background-color: #ccccd4;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0 2px 5px 0;
+    font-weight: 600!important;
+    text-transform: lowercase;
+    line-height: 15px;
+}
+
+/* annonce page starts here */
+
+.annonce-page .login-steps li {
+    float: left;
+    width: 20%;
+    position: relative;
+    text-align: center;
+}
+
+.annonce-page .login-steps li .number {
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    font-family: open sans;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background-color: #ffa602;
+    display: inline-block;
+    border-radius: 50%;
+    z-index: 5;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.annonce-page .login-steps li figure {
+    height: 60px;
+    margin-bottom: 18px !important;
+}
+
+.annonce-page .login-steps li img {
+    max-height: 60px;
+    max-width: 50px;
+    height: auto;
+}
+
+.annonce-page .login-steps li p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    text-align: center;
+    color: #5c5c68;
+    margin-bottom: 25px;
+}
+
+.annonce-page .login-steps li a {
+    text-decoration: underline;
+}
+
+.annonce-page .login-steps li:after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 0;
+    border-bottom: 2px solid #ffa602;
+    width: 100%;
+    height: 2px;
+}
+
+.annonce-page .login-steps li:first-child:after {
+    width: 50%;
+}
+
+.annonce-page .login-steps li:last-child:after {
+    width: 50%;
+    left: 0;
+    right: auto;
+}
+
+@media (max-width: 767px) {
+    .annonce-page .login-steps li {
+        float: none;
+        width: 100%;
+        margin-bottom: 35px;
+        padding: 0 30px;
+    }
+
+    .annonce-page .login-steps li .number {
+        margin-bottom: 20px;
+    }
+
+    .annonce-page .login-steps li figure {
+        margin-bottom: 12px!important;
+    }
+
+    .annonce-page .login-steps li:after {
+        display: none;
+    }
+}
+
+/***** img slider *****/
+
+.slider-wrapper {
+    padding: 5px;
+}
+
+.flexslider {
+    margin: 0;
+}
+
+#slider.flexslider .flex-direction-nav a {
+    height: 60px;
+}
+
+#slider.flexslider .flex-direction-nav a:before {
+    color: rgba(255,255,255,.7);
+}
+
+#carousel.flexslider .slides > li {
+    width: 100px !important;
+    height: 100px !important;
+    margin-right: 0 !important;
+}
+
+#carousel.flexslider .slides > li img {
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+#carousel.flexslider li img {
+    opacity: .3 !important;
+}
+
+#carousel.flexslider .flex-active-slide img {
+    opacity: 1 !important;
+}
+
+#carousel.flexslider .flex-direction-nav a {
+    width: 30px;
+    height: 30px;
+    transition: all .4s;
+}
+#carousel.flexslider .flex-direction-nav a:before {
+    font-size: 26px;
+}
+
+.slider-wrapper .custom-flex-direction {
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #bac1c1;
+    border-radius: 50%;
+    margin-right: 4px;
+    padding: 2px;
+    font-size: 20px;
+    color: #565662;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+.slider-wrapper .custom-flex-direction:hover {
+    background: #ffa602;
+    color: #fff;
+}
+
+.dash-shadow {
+    box-shadow: 0 0 32px 0 rgba(0,0,0,.1);
+}
+
+.pricing-table-list li {
+    color: #616161;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+  
